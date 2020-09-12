@@ -1,10 +1,11 @@
 """Main module."""
 
-import conf
-import utils
+from .conf import *
 
-import csp
-import rectify
-import cov
-import spec2pc
-import parest
+from pcabc import utils as ut
+
+from pcabc import csp
+from pcabc import rectify
+from pcabc import cov
+from pcabc import spec2pc
+from pcabc import parest
