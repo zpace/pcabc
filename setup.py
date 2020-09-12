@@ -10,7 +10,8 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = ['Click>=7.0', ]
+requirements = ['Click>=7.0', 'numpy', 'scipy', 'matplotlib', 'numba', 'dask', 
+                'astropy', 'pandas', 'fastcore']
 
 setup_requirements = ['pytest-runner', ]
 

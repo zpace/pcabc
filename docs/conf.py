@@ -31,7 +31,8 @@ import pcabc
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.autodoc', 'sphinx.ext.viewcode']
+extensions = ['sphinx.ext.autodoc', 'sphinx.ext.viewcode', 'recommonmark',
+              'sphinx.ext.napoleon']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -154,7 +155,7 @@ texinfo_documents = [
      'pcabc Documentation',
      author,
      'pcabc',
-     'One line description of project.',
+     'Approximate bayesian computation in a principal component framework',
      'Miscellaneous'),
 ]
 
