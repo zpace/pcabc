@@ -1,7 +1,7 @@
 """tab.py includes facilities for handling CSP data tables
 """
 
-from conf import *
+from ..conf import *
 
 from dask import delayed
 from astropy.io import fits
@@ -60,7 +60,7 @@ class CSPSet(object):
         lname : str
             extension name for lam
         """
-        
+
         with fits.open(fname) as hdulist:
             df = t.Table(hdulist[cspname].data).to_pandas()
             specs = hdulist[specname].data

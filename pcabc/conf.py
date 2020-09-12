@@ -7,8 +7,6 @@ from fastcore.utils import store_attr
 import os.path
 from os import environ
 
-from pcabc import __version__
-
 # environment variables govern directory structure
 BASEDIR = os.path.abspath(environ.get('MaNGAPCA_BASE', default='.'))
 CSP_BASEDIR = environ.get(
